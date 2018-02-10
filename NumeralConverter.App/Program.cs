@@ -10,12 +10,14 @@ namespace NumeralConverter.App
     {
         static void Main(string[] args)
         {
-            //while (true)
-            //{
-            //    var numerals = new Converter();
-            //    var myNumerals = numerals.Numeralize(int.Parse(Console.ReadLine()));
-            //    Console.Write(myNumerals); 
-            //}
+            Console.WriteLine("enter a number to see it converted to Roman Numerals.");
+            bool run = true;
+            while (run)
+            {
+                var myConverter = new Converter();
+                var myNumerals = myConverter.Numeralize(Convert.ToInt32(Console.ReadLine()));
+                Console.WriteLine(myNumerals.RomanNumeral);
+            }
         }
     }
 }
