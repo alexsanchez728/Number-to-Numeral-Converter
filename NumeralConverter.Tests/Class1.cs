@@ -52,5 +52,31 @@ namespace NumeralConverter.Tests
             // Assert
             Assert.AreEqual("IX", result.RomanNumeral);
         }
+        [Test]
+        public void Entering_number_twelve_results_in_one_X_and_two_I_numerals_being_printed()
+        {
+            // Arrange
+            var number = 12;
+            var numParser = new Converter();
+
+            // Act
+            var result = numParser.Numeralize(number);
+
+            // Assert
+            Assert.AreEqual("XII", result.RomanNumeral);
+        }
+        [Test]
+        public void Entering_number_sixteen_results_in_one_X_one_V_and_one_I_numerals_being_printed()
+        {
+            // Arrange
+            var number = 16;
+            var numParser = new Converter();
+
+            // Act
+            var result = numParser.Numeralize(number);
+
+            // Assert
+            Assert.AreEqual("XVI", result.RomanNumeral);
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace NumeralConverter.App
             while (number > 0)
             {
 
-                if (number == 10)
+                if (number >= 10)
                 {
                     result.RomanNumeral += "X";
                     number -= 10;
@@ -28,7 +28,7 @@ namespace NumeralConverter.App
                     continue;
                 }
 
-                else if (number == 5)
+                else if (number >= 5)
                 {
                     result.RomanNumeral += "V";
                     number -= 5;
