@@ -10,6 +10,12 @@ namespace NumeralConverter.App
     {
         static void Main(string[] args)
         {
+            //while (true)
+            //{
+            //    var numerals = new Converter();
+            //    var myNumerals = numerals.Numeralize(int.Parse(Console.ReadLine()));
+            //    Console.Write(myNumerals); 
+            //}
         }
     }
 }
