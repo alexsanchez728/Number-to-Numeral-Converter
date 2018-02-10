@@ -8,14 +8,16 @@ namespace NumeralConverter.App
 {
     public class Converter
     {
-        public Numeral Parse(int number)
+        public Numeral Numeralize(int number)
         {
-            var converted = new Numeral
-            {
-                RomanNumeral = "I"
-            };
+            var result = new Numeral();
 
-            return converted;
+            for (var i=0; i < number; i++)
+            {
+                result.RomanNumeral += "I";
+            }
+
+            return result;
         }
     }
     public class Numeral
